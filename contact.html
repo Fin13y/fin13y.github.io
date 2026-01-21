@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Green Sprout Seedlings. Visit our greenhouse, call us, or send a message. We're here to help with all your gardening questions.">
+  <title>Contact Us - Green Sprout Seedlings</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Skip to main content for keyboard navigation -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="site-logo" aria-label="Green Sprout Seedlings Home">
+        <div class="logo-img" aria-hidden="true">🌱</div>
+        <h1 class="site-title">Green Sprout Seedlings</h1>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="store.html">Store</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Page Header -->
+    <section class="hero">
+      <div class="container">
+        <h2>Get In Touch</h2>
+        <p>We're here to help with your gardening questions. Visit us, call, or send a message.</p>
+      </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="section">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-xl); margin-bottom: var(--space-xl);">
+          <!-- Location Card -->
+          <div class="card">
+            <div class="feature-icon" style="margin: 0 0 var(--space-md) 0;" aria-hidden="true">📍</div>
+            <h3>Visit Our Greenhouse</h3>
+            <p><strong>Green Sprout Seedlings</strong><br>
+            123 Garden Lane<br>
+            Your Town, ST 12345</p>
+            <p style="margin-top: var(--space-md);">
+              <a href="#directions" style="font-weight: 600;">Get Directions ↓</a>
+            </p>
+          </div>
+
+          <!-- Phone Card -->
+          <div class="card">
+            <div class="feature-icon" style="margin: 0 0 var(--space-md) 0;" aria-hidden="true">📞</div>
+            <h3>Call Us</h3>
+            <p><strong>Phone:</strong><br>
+            <a href="tel:+15551234567" style="font-size: 1.3rem; font-weight: 600;">(555) 123-4567</a></p>
+            <p style="margin-top: var(--space-md);">
+              We're happy to answer questions about plant availability, growing advice, or directions to our location.
+            </p>
+          </div>
+
+          <!-- Email Card -->
+          <div class="card">
+            <div class="feature-icon" style="margin: 0 0 var(--space-md) 0;" aria-hidden="true">✉️</div>
+            <h3>Email Us</h3>
+            <p><strong>Email:</strong><br>
+            <a href="mailto:info@greensprout.local" style="font-size: 1.2rem; font-weight: 600;">info@greensprout.local</a></p>
+            <p style="margin-top: var(--space-md);">
+              Send us your questions, and we'll get back to you within 24 hours (usually much faster!).
+            </p>
+          </div>
+        </div>
+
+        <!-- Hours Card -->
+        <div class="card" style="background-color: var(--color-bg-alt); border-color: var(--color-primary); max-width: 600px; margin: 0 auto;">
+          <h3 style="text-align: center;">Greenhouse Hours</h3>
+          <div style="display: grid; grid-template-columns: auto 1fr; gap: var(--space-sm) var(--space-md); font-size: 1.1rem;">
+            <strong>Monday - Friday:</strong>
+            <span>9:00 AM - 6:00 PM</span>
+
+            <strong>Saturday:</strong>
+            <span>8:00 AM - 5:00 PM</span>
+
+            <strong>Sunday:</strong>
+            <span>10:00 AM - 4:00 PM</span>
+          </div>
+          <p style="margin-top: var(--space-md); text-align: center; color: var(--color-text-light);">
+            <em>Hours may vary seasonally. Call ahead during winter months.</em>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="section section-alt">
+      <div class="container-narrow">
+        <h2 class="text-center">Send Us a Message</h2>
+        <p class="text-center" style="margin-bottom: var(--space-xl);">
+          Have a question about seedlings, growing advice, or availability? Fill out the form below, and we'll get back to you soon.
+        </p>
+
+        <form class="card" action="#" method="post" aria-label="Contact form">
+          <div class="form-group">
+            <label for="name">Your Name <span style="color: var(--color-secondary);">*</span></label>
+            <input type="text" id="name" name="name" required aria-required="true">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address <span style="color: var(--color-secondary);">*</span></label>
+            <input type="email" id="email" name="email" required aria-required="true">
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number (optional)</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+
+          <div class="form-group">
+            <label for="subject">What can we help you with? <span style="color: var(--color-secondary);">*</span></label>
+            <select id="subject" name="subject" required aria-required="true">
+              <option value="">Please select...</option>
+              <option value="availability">Check Seedling Availability</option>
+              <option value="advice">Growing Advice</option>
+              <option value="visit">Plan a Visit</option>
+              <option value="bulk">Bulk or Special Orders</option>
+              <option value="other">Other Question</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message <span style="color: var(--color-secondary);">*</span></label>
+            <textarea id="message" name="message" required aria-required="true" placeholder="Tell us about your garden, your questions, or what you're looking for..."></textarea>
+          </div>
+
+          <div style="background-color: var(--color-bg-alt); padding: var(--space-md); border-radius: var(--radius-md); margin-bottom: var(--space-lg);">
+            <p style="margin: 0; font-size: 1rem;">
+              <strong>Note:</strong> This is a demonstration form. In a live website, this would connect to a backend service to send your message. For now, please contact us using the phone number or email address listed above.
+            </p>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1.2rem;">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Directions Section -->
+    <section class="section" id="directions">
+      <div class="container-narrow">
+        <h2 class="text-center">Directions to Our Greenhouse</h2>
+
+        <!-- Map Placeholder -->
+        <div style="width: 100%; height: 400px; background-color: var(--color-bg-alt); border: 2px solid var(--color-border); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; margin: var(--space-lg) 0; color: var(--color-text-light);">
+          <div style="text-align: center; padding: var(--space-lg);">
+            <p style="font-size: 1.2rem; margin-bottom: var(--space-sm);">📍 Map Placeholder</p>
+            <p>Interactive map would appear here showing our location at:<br>
+            <strong>123 Garden Lane, Your Town, ST 12345</strong></p>
+          </div>
+        </div>
+
+        <!-- Driving Directions -->
+        <div class="card">
+          <h3>Driving Directions</h3>
+          <p><strong>From Downtown:</strong> Take Main Street north for 2 miles. Turn right on Garden Lane. We're the third building on the left with the large greenhouse out back.</p>
+
+          <p><strong>From Highway 50:</strong> Take Exit 23 (Oak Street). Head east for 1.5 miles, then turn left on Garden Lane. We're about half a mile up on the right.</p>
+
+          <p><strong>Parking:</strong> Free parking available in our lot. Accessible parking spaces are located near the entrance.</p>
+
+          <p><strong>Accessibility:</strong> Our greenhouse is wheelchair accessible with wide aisles and accessible restrooms. Please let us know if you need assistance, and we're happy to help.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section-alt">
+      <div class="container-narrow">
+        <h2 class="text-center">Frequently Asked Questions</h2>
+
+        <div class="card" style="margin-bottom: var(--space-md);">
+          <h3>Do I need to call ahead before visiting?</h3>
+          <p>Not necessary! We welcome walk-ins during our regular hours. However, if you're looking for a specific variety or large quantities, calling ahead helps us ensure we have what you need in stock.</p>
+        </div>
+
+        <div class="card" style="margin-bottom: var(--space-md);">
+          <h3>What payment methods do you accept?</h3>
+          <p>We accept cash, all major credit cards, and debit cards. We also offer discounts for bulk purchases and special pricing for community gardens and schools.</p>
+        </div>
+
+        <div class="card" style="margin-bottom: var(--space-md);">
+          <h3>Can I bring my kids?</h3>
+          <p>Absolutely! We love having young gardeners visit. Many children are fascinated by the greenhouse and learning where plants come from. We just ask that parents supervise their children around the plants.</p>
+        </div>
+
+        <div class="card" style="margin-bottom: var(--space-md);">
+          <h3>Do you offer any classes or workshops?</h3>
+          <p>We occasionally host free workshops on topics like transplanting, organic pest control, and season extension. Check our blog for announcements, or ask when you visit. We're also always happy to give informal advice!</p>
+        </div>
+
+        <div class="card">
+          <h3>What if my seedlings don't survive?</h3>
+          <p>We stand behind our plants. If seedlings fail within the first week due to plant health issues (not environmental factors), bring your receipt and we'll replace them. We want you to succeed and will work with you to figure out what went wrong.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final Call to Action -->
+    <section class="section">
+      <div class="container text-center">
+        <h2>We'd Love to See You!</h2>
+        <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto var(--space-lg);">
+          Whether you're starting your first garden or you're a seasoned grower, we're here to help. Stop by the greenhouse, and let's talk plants!
+        </p>
+        <a href="store.html" class="btn btn-primary">Browse Our Seedlings</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Green Sprout Seedlings</h3>
+          <p>Your local source for quality seedlings and gardening expertise. Growing together since 2020.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <a href="store.html">Shop Seedlings</a>
+          <a href="blog.html">Growing Tips</a>
+          <a href="about.html">Our Story</a>
+          <a href="contact.html">Visit Us</a>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <p>123 Garden Lane<br>Your Town, ST 12345</p>
+          <p>Phone: (555) 123-4567<br>Email: info@greensprout.local</p>
+        </div>
+        <div class="footer-section">
+          <h3>Hours</h3>
+          <p>Monday - Friday: 9am - 6pm<br>Saturday: 8am - 5pm<br>Sunday: 10am - 4pm</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Green Sprout Seedlings. All rights reserved. Growing locally, serving community.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
