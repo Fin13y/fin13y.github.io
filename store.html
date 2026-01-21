@@ -3,67 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Abundance Seedlings | Home</title>
+    <title>Abundance Seedlings | Store</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header">
+    <header class="site-header compact">
       <div class="top-bar">
         <div class="brand">
           <p class="eyebrow">Abundance Seedlings</p>
           <p class="tagline">UK-grown seedlings for hobbyist gardeners</p>
         </div>
         <nav class="nav" aria-label="Primary">
-          <a class="active" href="index.html">Home</a>
-          <a href="store.html">Store</a>
+          <a href="index.html">Home</a>
+          <a class="active" href="store.html">Store</a>
           <a href="testimonials.html">Testimonials</a>
           <a href="blog.html">Blog</a>
         </nav>
       </div>
-      <div class="hero">
-        <div class="hero-content">
-          <h1>Grow a thriving garden with locally started seedlings.</h1>
+      <div class="hero compact">
+        <div>
+          <h1>Pre-order seedlings for pickup.</h1>
           <p class="lede">
-            We nurture hardy starts for hobbyist gardeners across the UK each spring and
-            summer, with friendly guidance and flexible pickup options.
+            Build your seasonal tray with tomatoes, chillis, peppers, herbs, and flowers.
+            Select the items you want and leave an email so we can confirm when everything
+            is ready to collect.
           </p>
-          <div class="cta-row">
-            <a class="primary" href="testimonials.html">Read testimonials</a>
-            <a class="ghost" href="blog.html">Visit the garden blog</a>
-            <a class="ghost" href="#store">Shop pre-orders</a>
-          </div>
         </div>
-        <div class="banner" role="img" aria-label="Placeholder banner for seasonal seedling photography">
-          <p>Seasonal banner image placeholder</p>
+        <div class="banner" role="img" aria-label="Fresh produce and seedlings banner">
+          <p>Store banner placeholder</p>
         </div>
       </div>
     </header>
 
     <main id="main">
-      <section class="panel">
-        <div>
-          <h2>Seasonal offerings for joyful gardeners</h2>
-          <p>
-            Each tray is started in our local greenhouse, hardened for outdoor success, and
-            ready to tuck into raised beds or patio planters. We specialise in tomatoes,
-            peppers, herbs, and pollinator-friendly flowers.
-          </p>
-          <ul class="feature-list">
-            <li>Weekly restocks every Thursday from April through July.</li>
-            <li>Personalised variety recommendations for your space and light.</li>
-            <li>Care tips included with every order.</li>
-          </ul>
-        </div>
-        <aside class="highlight">
-          <h3>Pickup details</h3>
-          <p>
-            Find us at the Saturday neighbourhood market, or schedule a quick porch pickup.
-            Follow our socials for the latest availability list.
-          </p>
-          <div class="badge">Spring + Summer</div>
-        </aside>
-      </section>
-
       <section class="panel store" id="store">
         <div class="panel-intro">
           <h2>Pre-order the season's favourites</h2>
@@ -76,6 +48,14 @@
         <form class="store-form" aria-label="Pre-order store">
           <div class="product-grid">
             <article class="product-card">
+              <figure class="product-media">
+                <img
+                  class="product-image"
+                  src="https://images.unsplash.com/photo-1461354464878-ad92f492a5a0?auto=format&fit=crop&w=600&q=80"
+                  alt="Heirloom tomatoes on the vine"
+                  loading="lazy"
+                />
+              </figure>
               <div class="product-header">
                 <div>
                   <h3>Heirloom Tomato Trio</h3>
@@ -103,6 +83,14 @@
               </div>
             </article>
             <article class="product-card">
+              <figure class="product-media">
+                <img
+                  class="product-image"
+                  src="https://images.unsplash.com/photo-1506808547685-e2ba962dedf5?auto=format&fit=crop&w=600&q=80"
+                  alt="Colourful chilli peppers"
+                  loading="lazy"
+                />
+              </figure>
               <div class="product-header">
                 <div>
                   <h3>Sunshine Pepper Pack</h3>
@@ -130,6 +118,14 @@
               </div>
             </article>
             <article class="product-card">
+              <figure class="product-media">
+                <img
+                  class="product-image"
+                  src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=600&q=80"
+                  alt="Fresh herb leaves in sunlight"
+                  loading="lazy"
+                />
+              </figure>
               <div class="product-header">
                 <div>
                   <h3>Kitchen Herb Starter</h3>
@@ -157,6 +153,14 @@
               </div>
             </article>
             <article class="product-card">
+              <figure class="product-media">
+                <img
+                  class="product-image"
+                  src="https://images.unsplash.com/photo-1471193945509-9ad0617afabf?auto=format&fit=crop&w=600&q=80"
+                  alt="Assorted flowers in bloom"
+                  loading="lazy"
+                />
+              </figure>
               <div class="product-header">
                 <div>
                   <h3>Pollinator Flower Mix</h3>
@@ -215,23 +219,19 @@
       </section>
 
       <section class="panel">
-        <div>
-          <h2>What sets Abundance Seedlings apart</h2>
-          <div class="grid">
-            <article>
-              <h3>Locally adapted varieties</h3>
-              <p>We trial varieties that thrive in our specific climate zones.</p>
-            </article>
-            <article>
-              <h3>Guidance for new gardeners</h3>
-              <p>Short, practical tips that fit into busy schedules.</p>
-            </article>
-            <article>
-              <h3>Community-first values</h3>
-              <p>We love collaborating with school gardens and neighbourhood groups.</p>
-            </article>
-          </div>
+        <div class="panel-intro">
+          <h2>How pre-orders work</h2>
+          <p>
+            We prep each tray based on the local forecast, then notify you when it's ready
+            to collect. Bring a box or tray and we will have your plants packed and labeled
+            for pickup.
+          </p>
         </div>
+        <ul class="feature-list">
+          <li>Confirmation emails go out every Wednesday evening.</li>
+          <li>Pickup windows are Friday afternoons and Saturday market hours.</li>
+          <li>Payment is collected when you pick up your seedlings.</li>
+        </ul>
       </section>
     </main>
 
