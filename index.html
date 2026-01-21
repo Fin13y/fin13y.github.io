@@ -30,7 +30,7 @@
           <div class="cta-row">
             <a class="primary" href="testimonials.html">Read testimonials</a>
             <a class="ghost" href="blog.html">Visit the garden blog</a>
-            <a class="ghost" href="store.html">Shop pre-orders</a>
+            <a class="ghost" href="#store">Shop pre-orders</a>
           </div>
         </div>
         <div class="banner" role="img" aria-label="Placeholder banner for seasonal seedling photography">
@@ -62,6 +62,156 @@
           </p>
           <div class="badge">Spring + Summer</div>
         </aside>
+      </section>
+
+      <section class="panel store" id="store">
+        <div class="panel-intro">
+          <h2>Pre-order the season's favourites</h2>
+          <p>
+            Reserve your seedlings now and we will follow up once your trays are ready for
+            collection. Select as many items as you like, then checkout with an email so we
+            can confirm your pickup window.
+          </p>
+        </div>
+        <form class="store-form" aria-label="Pre-order store">
+          <div class="product-grid">
+            <article class="product-card">
+              <div class="product-header">
+                <div>
+                  <h3>Heirloom Tomato Trio</h3>
+                  <p class="product-note">3 seedlings · indeterminate varieties</p>
+                </div>
+                <p class="price">£12</p>
+              </div>
+              <p>
+                A curated mix of sweet, low-acid heritage tomatoes that thrive in patio pots
+                or raised beds.
+              </p>
+              <div class="product-actions">
+                <label class="choice">
+                  <input type="checkbox" name="items" value="Heirloom Tomato Trio" />
+                  Add to cart
+                </label>
+                <label class="quantity">
+                  Qty
+                  <select name="qty-tomato">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </label>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-header">
+                <div>
+                  <h3>Sunshine Pepper Pack</h3>
+                  <p class="product-note">4 seedlings · mixed sweet peppers</p>
+                </div>
+                <p class="price">£14</p>
+              </div>
+              <p>
+                Bright yellow, orange, and red peppers bred for reliable yields in cooler
+                summers.
+              </p>
+              <div class="product-actions">
+                <label class="choice">
+                  <input type="checkbox" name="items" value="Sunshine Pepper Pack" />
+                  Add to cart
+                </label>
+                <label class="quantity">
+                  Qty
+                  <select name="qty-pepper">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </label>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-header">
+                <div>
+                  <h3>Kitchen Herb Starter</h3>
+                  <p class="product-note">6 seedlings · basil, thyme, parsley</p>
+                </div>
+                <p class="price">£10</p>
+              </div>
+              <p>
+                A countertop-friendly selection to keep fresh herbs within arm's reach all
+                summer long.
+              </p>
+              <div class="product-actions">
+                <label class="choice">
+                  <input type="checkbox" name="items" value="Kitchen Herb Starter" />
+                  Add to cart
+                </label>
+                <label class="quantity">
+                  Qty
+                  <select name="qty-herb">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </label>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-header">
+                <div>
+                  <h3>Pollinator Flower Mix</h3>
+                  <p class="product-note">6 seedlings · nectar-rich blooms</p>
+                </div>
+                <p class="price">£11</p>
+              </div>
+              <p>
+                Zinnias, cosmos, and calendula to bring colour and keep pollinators visiting
+                all season.
+              </p>
+              <div class="product-actions">
+                <label class="choice">
+                  <input type="checkbox" name="items" value="Pollinator Flower Mix" />
+                  Add to cart
+                </label>
+                <label class="quantity">
+                  Qty
+                  <select name="qty-flowers">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </label>
+              </div>
+            </article>
+          </div>
+          <aside class="cart-panel">
+            <h3>Checkout</h3>
+            <p>
+              We will reach out within 2 business days to confirm your pickup date and
+              total.
+            </p>
+            <label for="checkout-email">Email address</label>
+            <input
+              id="checkout-email"
+              type="email"
+              name="checkout-email"
+              placeholder="you@example.com"
+              required
+            />
+            <label for="pickup-window">Preferred pickup window</label>
+            <select id="pickup-window" name="pickup-window">
+              <option>Saturday market</option>
+              <option>Weekday porch pickup</option>
+              <option>Either works</option>
+            </select>
+            <label for="notes">Notes for our team</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Share any variety requests."></textarea>
+            <button type="submit">Checkout pre-order</button>
+            <p class="fine-print">
+              This is a reservation request. We will confirm availability before payment.
+            </p>
+          </aside>
+        </form>
       </section>
 
       <section class="panel">
