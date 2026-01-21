@@ -73,6 +73,9 @@ class ShoppingBasket {
     basketLinks.forEach(link => {
       const badge = link.querySelector('.cart-count');
       if (count > 0) {
+        // Add has-items class for prominent styling
+        link.classList.add('has-items');
+
         if (!badge) {
           const newBadge = document.createElement('span');
           newBadge.className = 'cart-count';
@@ -81,8 +84,12 @@ class ShoppingBasket {
         } else {
           badge.textContent = count;
         }
-      } else if (badge) {
-        badge.remove();
+      } else {
+        // Remove has-items class when basket is empty
+        link.classList.remove('has-items');
+        if (badge) {
+          badge.remove();
+        }
       }
     });
 
