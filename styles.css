@@ -311,6 +311,10 @@ a:focus {
   overflow: visible;
 }
 
+.main-nav a.cart-badge::before {
+  display: none;
+}
+
 /* ============================================
    Layout & Containers
    ============================================ */
