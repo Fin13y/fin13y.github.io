@@ -56,7 +56,11 @@
             <p>Brandywine, Cherokee Purple, and more. Perfect for UK gardens.</p>
             <div class="price">£3.50 each</div>
             <p style="font-size: 0.9rem; color: var(--color-text-light);">Available: April - June</p>
-            <button onclick="basket.addItem('tom-heir', 'Heirloom Tomato Seedlings', 3.50)" class="btn btn-primary">Add to Basket</button>
+            <div class="quantity-selector">
+              <label for="qty-tom-heir">Quantity:</label>
+              <input type="number" id="qty-tom-heir" min="1" max="50" value="1">
+            </div>
+            <button onclick="basket.addItem('tom-heir', 'Heirloom Tomato Seedlings', 3.50, parseInt(document.getElementById('qty-tom-heir').value))" class="btn btn-primary">Add to Basket</button>
           </article>
 
           <article class="card">
@@ -65,7 +69,11 @@
             <p>Sweet 100, Sungold. Prolific and perfect for containers.</p>
             <div class="price">£3.00 each</div>
             <p style="font-size: 0.9rem; color: var(--color-text-light);">Available: April - June</p>
-            <button onclick="basket.addItem('tom-cherry', 'Cherry Tomato Plants', 3.00)" class="btn btn-primary">Add to Basket</button>
+            <div class="quantity-selector">
+              <label for="qty-tom-cherry">Quantity:</label>
+              <input type="number" id="qty-tom-cherry" min="1" max="50" value="1">
+            </div>
+            <button onclick="basket.addItem('tom-cherry', 'Cherry Tomato Plants', 3.00, parseInt(document.getElementById('qty-tom-cherry').value))" class="btn btn-primary">Add to Basket</button>
           </article>
 
           <article class="card">
@@ -74,7 +82,11 @@
             <p>Colourful sweet peppers. Excellent for cooking.</p>
             <div class="price">£3.00 each</div>
             <p style="font-size: 0.9rem; color: var(--color-text-light);">Available: April - June</p>
-            <button onclick="basket.addItem('pep-bell', 'Bell Pepper Plants', 3.00)" class="btn btn-primary">Add to Basket</button>
+            <div class="quantity-selector">
+              <label for="qty-pep-bell">Quantity:</label>
+              <input type="number" id="qty-pep-bell" min="1" max="50" value="1">
+            </div>
+            <button onclick="basket.addItem('pep-bell', 'Bell Pepper Plants', 3.00, parseInt(document.getElementById('qty-pep-bell').value))" class="btn btn-primary">Add to Basket</button>
           </article>
 
           <article class="card">
@@ -83,7 +95,11 @@
             <p>Green and yellow varieties. Productive all summer.</p>
             <div class="price">£2.75 each</div>
             <p style="font-size: 0.9rem; color: var(--color-text-light);">Available: May - July</p>
-            <button onclick="basket.addItem('courg', 'Courgette Plants', 2.75)" class="btn btn-primary">Add to Basket</button>
+            <div class="quantity-selector">
+              <label for="qty-courg">Quantity:</label>
+              <input type="number" id="qty-courg" min="1" max="50" value="1">
+            </div>
+            <button onclick="basket.addItem('courg', 'Courgette Plants', 2.75, parseInt(document.getElementById('qty-courg').value))" class="btn btn-primary">Add to Basket</button>
           </article>
 
           <article class="card">
@@ -92,7 +108,11 @@
             <p>Variety pack of leaf lettuces. Perfect for salads.</p>
             <div class="price">£2.00 per 6-pack</div>
             <p style="font-size: 0.9rem; color: var(--color-text-light);">Available: March - May, Aug - Oct</p>
-            <button onclick="basket.addItem('let-mix', 'Lettuce Mix (6-pack)', 2.00)" class="btn btn-primary">Add to Basket</button>
+            <div class="quantity-selector">
+              <label for="qty-let-mix">Quantity:</label>
+              <input type="number" id="qty-let-mix" min="1" max="50" value="1">
+            </div>
+            <button onclick="basket.addItem('let-mix', 'Lettuce Mix (6-pack)', 2.00, parseInt(document.getElementById('qty-let-mix').value))" class="btn btn-primary">Add to Basket</button>
           </article>
 
           <article class="card">
@@ -101,7 +121,11 @@
             <p>Scarlet Emperor and white-flowered varieties.</p>
             <div class="price">£2.50 each</div>
             <p style="font-size: 0.9rem; color: var(--color-text-light);">Available: April - June</p>
-            <button onclick="basket.addItem('bean-run', 'Runner Bean Plants', 2.50)" class="btn btn-primary">Add to Basket</button>
+            <div class="quantity-selector">
+              <label for="qty-bean-run">Quantity:</label>
+              <input type="number" id="qty-bean-run" min="1" max="50" value="1">
+            </div>
+            <button onclick="basket.addItem('bean-run', 'Runner Bean Plants', 2.50, parseInt(document.getElementById('qty-bean-run').value))" class="btn btn-primary">Add to Basket</button>
           </article>
         </div>
       </div>
@@ -118,7 +142,11 @@
             <p>6-pack: basil, coriander, parsley, oregano, thyme, chives.</p>
             <div class="price">£12.00 collection</div>
             <p style="font-size: 0.9rem; color: var(--color-text-light);">Available: April - August</p>
-            <button onclick="basket.addItem('herb-col', 'Herb Starter Collection', 12.00)" class="btn btn-primary">Add to Basket</button>
+            <div class="quantity-selector">
+              <label for="qty-herb-col">Quantity:</label>
+              <input type="number" id="qty-herb-col" min="1" max="20" value="1">
+            </div>
+            <button onclick="basket.addItem('herb-col', 'Herb Starter Collection', 12.00, parseInt(document.getElementById('qty-herb-col').value))" class="btn btn-primary">Add to Basket</button>
           </article>
 
           <article class="card">
@@ -127,7 +155,11 @@
             <p>Sweet basil, Thai basil, purple basil.</p>
             <div class="price">£2.50 each</div>
             <p style="font-size: 0.9rem; color: var(--color-text-light);">Available: April - August</p>
-            <button onclick="basket.addItem('basil', 'Basil Plants', 2.50)" class="btn btn-primary">Add to Basket</button>
+            <div class="quantity-selector">
+              <label for="qty-basil">Quantity:</label>
+              <input type="number" id="qty-basil" min="1" max="50" value="1">
+            </div>
+            <button onclick="basket.addItem('basil', 'Basil Plants', 2.50, parseInt(document.getElementById('qty-basil').value))" class="btn btn-primary">Add to Basket</button>
           </article>
 
           <article class="card">
@@ -136,7 +168,11 @@
             <p>Fast-growing. Perfect for curries and salsa.</p>
             <div class="price">£2.00 each</div>
             <p style="font-size: 0.9rem; color: var(--color-text-light);">Available: March - October</p>
-            <button onclick="basket.addItem('cori', 'Coriander Plants', 2.00)" class="btn btn-primary">Add to Basket</button>
+            <div class="quantity-selector">
+              <label for="qty-cori">Quantity:</label>
+              <input type="number" id="qty-cori" min="1" max="50" value="1">
+            </div>
+            <button onclick="basket.addItem('cori', 'Coriander Plants', 2.00, parseInt(document.getElementById('qty-cori').value))" class="btn btn-primary">Add to Basket</button>
           </article>
 
           <article class="card">
@@ -145,7 +181,11 @@
             <p>Spearmint, peppermint, chocolate mint.</p>
             <div class="price">£2.75 each</div>
             <p style="font-size: 0.9rem; color: var(--color-text-light);">Available: April - September</p>
-            <button onclick="basket.addItem('mint', 'Mint Plants', 2.75)" class="btn btn-primary">Add to Basket</button>
+            <div class="quantity-selector">
+              <label for="qty-mint">Quantity:</label>
+              <input type="number" id="qty-mint" min="1" max="50" value="1">
+            </div>
+            <button onclick="basket.addItem('mint', 'Mint Plants', 2.75, parseInt(document.getElementById('qty-mint').value))" class="btn btn-primary">Add to Basket</button>
           </article>
         </div>
       </div>
@@ -162,7 +202,11 @@
             <p>Cheerful, easy-to-grow. Natural pest deterrent.</p>
             <div class="price">£2.00 per 6-pack</div>
             <p style="font-size: 0.9rem; color: var(--color-text-light);">Available: April - June</p>
-            <button onclick="basket.addItem('mar', 'Marigolds (6-pack)', 2.00)" class="btn btn-primary">Add to Basket</button>
+            <div class="quantity-selector">
+              <label for="qty-mar">Quantity:</label>
+              <input type="number" id="qty-mar" min="1" max="50" value="1">
+            </div>
+            <button onclick="basket.addItem('mar', 'Marigolds (6-pack)', 2.00, parseInt(document.getElementById('qty-mar').value))" class="btn btn-primary">Add to Basket</button>
           </article>
 
           <article class="card">
@@ -171,7 +215,11 @@
             <p>Giant and dwarf varieties. Stunning blooms.</p>
             <div class="price">£2.50 each</div>
             <p style="font-size: 0.9rem; color: var(--color-text-light);">Available: May - July</p>
-            <button onclick="basket.addItem('sun', 'Sunflower Plants', 2.50)" class="btn btn-primary">Add to Basket</button>
+            <div class="quantity-selector">
+              <label for="qty-sun">Quantity:</label>
+              <input type="number" id="qty-sun" min="1" max="50" value="1">
+            </div>
+            <button onclick="basket.addItem('sun', 'Sunflower Plants', 2.50, parseInt(document.getElementById('qty-sun').value))" class="btn btn-primary">Add to Basket</button>
           </article>
 
           <article class="card">
@@ -180,7 +228,11 @@
             <p>Delicate flowers. Perfect for pollinators.</p>
             <div class="price">£2.00 per 6-pack</div>
             <p style="font-size: 0.9rem; color: var(--color-text-light);">Available: April - June</p>
-            <button onclick="basket.addItem('cos', 'Cosmos (6-pack)', 2.00)" class="btn btn-primary">Add to Basket</button>
+            <div class="quantity-selector">
+              <label for="qty-cos">Quantity:</label>
+              <input type="number" id="qty-cos" min="1" max="50" value="1">
+            </div>
+            <button onclick="basket.addItem('cos', 'Cosmos (6-pack)', 2.00, parseInt(document.getElementById('qty-cos').value))" class="btn btn-primary">Add to Basket</button>
           </article>
 
           <article class="card">
@@ -189,7 +241,11 @@
             <p>UK native plants including echinacea, rudbeckia.</p>
             <div class="price">£4.00 each</div>
             <p style="font-size: 0.9rem; color: var(--color-text-light);">Available: April - September</p>
-            <button onclick="basket.addItem('per-nat', 'Native Perennial Mix', 4.00)" class="btn btn-primary">Add to Basket</button>
+            <div class="quantity-selector">
+              <label for="qty-per-nat">Quantity:</label>
+              <input type="number" id="qty-per-nat" min="1" max="50" value="1">
+            </div>
+            <button onclick="basket.addItem('per-nat', 'Native Perennial Mix', 4.00, parseInt(document.getElementById('qty-per-nat').value))" class="btn btn-primary">Add to Basket</button>
           </article>
         </div>
       </div>
